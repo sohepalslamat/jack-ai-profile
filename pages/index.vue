@@ -65,6 +65,24 @@
         <p>يتكون فريق Jack-AI حالياً من ثلاثة أعضاء، يضم مجموعة من المبرمجين المساعدين، ويقوده المؤسس صهيب السلامات الذي قام بتأسيس الشركة من الصفر بخبرة قوية في البرمجة وتطوير الأنظمة، واضعاً رؤية مستقبلية واضحة للذكاء الاصطناعي في خدمة الشركات.</p>
       </section>
 
+      <section id="stats">
+        <h2>📊 إنجازاتنا في الأرقام</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">$6,000+</div>
+            <div class="stat-label">الإيرادات المحققة حتى الآن</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4</div>
+            <div class="stat-label">عدد العملاء</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5,000+</div>
+            <div class="stat-label">محادثة تمت خلال الشهرين الماضيين</div>
+          </div>
+        </div>
+      </section>
+
       <section id="additional-image-container">
         <img src="/logo.png" alt="صورة توضيحية للذكاء الاصطناعي" id="additional-img">
       </section>
@@ -72,7 +90,7 @@
 
     <footer>
       <p>&copy; 2025 Jack-AI. جميع الحقوق محفوظة.</p>
-      <p>للتواصل: <a href="mailto:info@jack-ai.net">info@jack-ai.net</a> | الهاتف: <a href="tel:+905380295960">+90 538 029 5960</a> / <a href="tel:+905310800334">+90 531 080 0334</a></p>
+      <p>للتواصل: <a href="mailto:info@jack-ai.net">info@jack-ai.net</a> | الهاتف: <a href="tel:+905380295960">5960 029 538 90+</a> / <a href="tel:+905310800334">0334 080 531 90+</a></p>
       <p><a href="https://jack-ai.net" target="_blank" rel="noopener">https://jack-ai.net</a></p>
     </footer>
   </div>
@@ -229,6 +247,52 @@ section#differentiation li::before {
   top: 1px;
 }
 
+/* Stats Section */
+#stats {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 40px 0;
+  border: 2px solid #e67e22;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 25px 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #27ae60;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.stat-number {
+  font-size: 3em;
+  font-weight: 700;
+  color: #e67e22;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-label {
+  font-size: 1.1em;
+  color: #2c3e50;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 /* Additional Image */
 #additional-image-container {
   text-align: center;
@@ -310,6 +374,23 @@ footer a:hover {
     box-shadow: none;
     padding: 10px;
     background-color: #fff !important;
+  }
+  #stats {
+    background: #fff !important;
+    border-color: #000 !important;
+    box-shadow: none;
+  }
+  .stat-item {
+    background: #fff !important;
+    border-color: #000 !important;
+    box-shadow: none;
+  }
+  .stat-number {
+    color: #000 !important;
+    text-shadow: none;
+  }
+  .stat-label {
+    color: #000 !important;
   }
   #additional-img {
     border-color: #000 !important;

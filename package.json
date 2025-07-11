@@ -7,12 +7,17 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "pdf": "node convert_to_pdf.js",
+    "pdf:advanced": "node convert_to_pdf_advanced.js"
   },
   "dependencies": {
     "nuxt": "^3.17.2",
     "puppeteer": "^24.8.2",
     "vue": "^3.5.13",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
